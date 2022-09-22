@@ -1,0 +1,71 @@
+
+@font-face {
+  font-family: "Mantinia";
+  src: url('Mantinia.woff2') format('woff2'),
+       url('Mantinia.woff') format('woff'),
+       url("Mantinia.otf") format("opentype"),
+       local("Mantinia.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {  
+  display: grid;
+  background-color: black;
+  
+  grid-template-columns:  1fr 1fr 1fr; 
+  grid-template-rows:  0.8fr 1.8fr 0.8fr;
+  gap: 0px 0px;
+  color:aliceblue;
+  
+  
+  grid-template-areas: 
+    ". logo ."
+    "img1 animation1 img2"
+    ". networks .";
+    
+}
+
+.logo { grid-area: logo; text-align: center; margin-top: 0%;} 
+
+.img2 { grid-area: img2; justify-content: center;  }
+
+.img1 { grid-area: img1; justify-content: center;  }
+
+.animation1 { grid-area: animation1; width: 1000px;  height: 500px ; justify-content: center; }
+
+.networks { grid-area: networks; text-align: center;
+font-family: Mantinia;
+font-size: 60px;  
+}  
+
+.container2 {  display: grid;
+   
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2.2fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "NavBar . ."
+    ". Carrusel ."
+    ". . .";
+}
+
+.NavBar { grid-area: NavBar;
+  color:white;
+  background-color:black; 
+}
+
+.carouselExampleControls { grid-area: Carrusel; 
+
+
+} 
+
+.Texto { grid-area: Texto;
+  font-family: Mantinia;
+  font-size: 20px;
+  color:white 
+}
+
+
